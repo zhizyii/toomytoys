@@ -1,0 +1,268 @@
+*{
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* HOME PAGE */
+#home{
+    background: url(background.jpg); /* width 625, height < 422 */
+    background-size: cover;
+    background-position: center;
+    height: 115vh;
+    font-family: 'Gochi Hand', cursive;
+    letter-spacing: 0.2em;
+    color: #896125;
+}
+
+/* Style the top navigation bar */
+.topnav {
+    font-family: 'Dekko', cursive;
+    font-weight: 800;
+    background-color: #e8ca88;
+    position: fixed;
+    overflow: hidden;
+    width: 100%;
+    z-index: 2;
+}
+  
+.topnav ul {
+    list-style-type: none;
+    padding-left: 440px;
+    left: 50px;
+    letter-spacing: 0.1em;
+    font-size: 18px;
+}
+
+.topnav li {
+    float: left;
+  }
+  
+.topnav a {
+    display: block;
+    color: rgb(97, 70, 15);
+    text-align: center;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.topnav li a:hover {
+    font-size: 19px;
+    color: rgb(97, 70, 15);
+  }
+
+/* TOOMY TOYS TOP LEFT LOGO */
+.logo{
+    width: 75px;
+    position: absolute;
+    left: 1%;
+}
+
+/* DOODLE GIRL LOGO */
+.girl{
+    width: 200px;
+    padding-top: 120px;
+
+}
+
+/* HOME PAGE TEXTS */
+.banner-text{
+    text-align: center;
+    color: #543e13;
+    font-size: 60px;
+}
+
+.banner-text h1{
+    padding-top: -20px;
+}
+
+/* HOME PAGE SHOP NOW BUTTON */
+.shop-btn{
+    margin: 40px auto 0;
+}
+.shop-btn a{
+    width: 150px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 8px;
+    padding: 10px 0;
+    color: #fff4d6;
+    background-color: #543e13;
+    border-radius: 14px;
+    font-size: 22px;
+    font-family: 'Dekko', cursive;
+    font-weight: bolder;
+    position: relative;
+    z-index: 1;
+}
+.shop-btn a span{
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #896125;
+    border-radius: 14px;
+    z-index: -1;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+/* SHOP NOW BUTTON HOVER EFFECT */
+.shop-btn a:hover span{
+    width: 100%;
+    border-radius: 15px;
+}
+
+
+@media screen and (max-width: 770px){
+    .banner-text h1{
+        font-size: 44px;
+    }
+    .shop-btn a{
+        display: block;
+        margin: 20px auto;
+    }
+}
+
+/* ABOUTS PAGE */
+#about{
+    background: #f6d99a;
+    padding-top: 60px;
+}
+
+.teddy-gif{
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+/* PRODUCTS PAGE */
+#products{
+    width: 100%;
+    background-color: #f6d99a;
+    padding-top: 60px;
+}
+
+.title-text{
+    text-align: center;
+    padding-bottom: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.title-text h1{
+    font-size: 60px;
+    font-family: 'Darumadrop One', cursive;
+    letter-spacing: 2px;
+    display: inline-block;
+    color: rgb(97, 70, 15);
+    padding-bottom: 5px;
+}   
+
+.title-text p{
+    font-size: 20px;
+}
+
+/* FLIP BOX */
+.container {
+    background-color: transparent;
+    perspective: 1000px;
+    width: 360px;
+    height: 350px;
+    border-radius: 10px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    border: 1px solid #373535;
+}
+  
+.container-inner {
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+  
+.container:hover .container-inner {
+    transform: rotateY(180deg);
+}
+  
+.container-front, .container-back {
+    position: absolute;
+    padding: 15px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 10px;
+}
+
+.container-front {
+    background-color: transparent;
+    color: black;
+    font-size: 18px;
+}
+  
+.container-back {
+    background-color: transparent;
+    color: black;
+    transform: rotateY(180deg);;
+    align-items: center;
+    font-size: 17px;
+}
+
+.container-back p{
+    padding: 5px;
+}
+
+.products-box{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    columns: 200px 3;
+}
+
+.products-img{
+    position: relative;
+}
+
+.products-img img{
+    width: 50%;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.products-desc{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.listing-name {
+    font-size: 26px;
+    padding: 10px;
+    font-family: 'Darumadrop One', cursive;
+    font-weight: bold;
+    color: #5b421a;
+}
+
+.products-text p{
+    font-size: 18px;
+    color: #212427;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}

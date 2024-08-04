@@ -8,7 +8,7 @@ html {
 
 /* HOME PAGE */
 #home{
-    background: url(background.jpg); /* width 625, height < 422 */
+    background: url(images/background.jpg); /* width 625, height < 422 */
     background-size: cover;
     background-position: center;
     height: 115vh;
